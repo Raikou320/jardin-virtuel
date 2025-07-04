@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jardin Virtuel</title>
-</head>
-<body>
     <style>
-        body {
-            color: #433100;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-y: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #garden {
+        display: flex;
+        position: relative;
+        height: 100vh;
+        max-width: 80vw;
+        justify-content: center;
+        align-items: center;
+      }
+      .flower {
+        animation: pop 0.6s ease-out;
+      }
+
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: scale(0);
         }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
     </style>
-    <img src="./assets/flower.svg" />
-</body>
+  </head>
+  <body>
+    <div id="garden"></div>
+    <script src="./flower.js"></script>
+    <script src="./tree.js"></script>
+    <script src="./cherry.js"></script>
+    <script>
+      const garden = document.getElementById("garden");
+      createTree(
+        "brown",
+        "green",
+        50,
+        150,
+        30,
+        112.5,
+        garden
+      );
+    </script>
+  </body>
 </html>
