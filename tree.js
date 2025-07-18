@@ -25,6 +25,5 @@ function createTree(
   image.src = url;
   image.onload = () => URL.revokeObjectURL(url);
   container.appendChild(image);
-  console.log(50 - (trunkWidth / width / 2) * 100);
   return image;
 }
