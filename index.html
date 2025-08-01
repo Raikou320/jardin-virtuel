@@ -38,15 +38,36 @@
           transform: scale(1);
         }
       }
+      #invContainer {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.3);
+      }
+      #indexContainer {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #222;
+        font-family: Arial, sans-serif;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.3);
+      }
+
     </style>
   </head>
   <body>
-    <h1>Inventaire: <span id="inventory"></span></h1>
+    <h2 id="invContainer">Inventaire: <span id="inventory"></span></h2>
+    <h3 id="indexContainer">Appuyez sur I pour ouvrir l'index des insectes</h3>
     <div id="garden"></div>
     <script src="./flower.js"></script>
     <script src="./tree.js"></script>
     <script src="./cherry.js"></script>
     <script src="./connexion.js"></script>
+    <script src="./insectIndex.js"></script>
     <script>
       const garden = document.getElementById("garden");
       

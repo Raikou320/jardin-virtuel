@@ -1,1 +1,6 @@
 BOOSTER tout: les 4 jours connectés.
+Abeille: 5% de chances d'apparition toutes les 10 minutes au printemps, en automne et 10% en été
+Fertilisant: les fleurs poussent plus vite, mais 50% de chance en moins pour les abeilles
+Ver de terre: sert à entretenir la terre
+Coccinelle: réduisent les risques que les fleurs se fassent manger
+Index des insectes: pour répertorier les insectes
